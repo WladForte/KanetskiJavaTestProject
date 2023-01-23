@@ -1,0 +1,6 @@
+{
+  "randomArrayMinLength": 2,
+  "randomArrayMaxLength": 20,
+  "randomArrayMinElement": 1,
+  "randomArrayMaxElement": 500
+}

@@ -1,0 +1,11 @@
+{
+  "taskOne": {
+    "requiredNumberForGreeting": 7
+  },
+  "taskTwo": {
+    "requiredNameForGreeting": "Вячеслав"
+  },
+  "taskThree": {
+    "numberMultipleOf": 3
+  }
+}
