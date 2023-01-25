@@ -4,14 +4,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
-import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
  * A utility class for reading user input from the console.
  */
-public final class ConsoleInputReader implements UserInputReader{
+public final class ConsoleInputReader{
 
     private static final ConsoleInputReader INSTANCE = new ConsoleInputReader();
     private static final Logger logger = LogManager.getLogger(ConsoleInputReader.class);
@@ -36,6 +35,7 @@ public final class ConsoleInputReader implements UserInputReader{
     public void shutDown(){
         try {
             innerReader.close();
+            logger.info("The console reader has been shut down");
         } catch (IOException e) {
             logger.error("An error occurred while closing the console input reader");
         }

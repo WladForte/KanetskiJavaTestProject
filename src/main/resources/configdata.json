@@ -1,6 +1,6 @@
 {
-  "randomArrayMinLength": 2,
-  "randomArrayMaxLength": 20,
-  "randomArrayMinElement": 1,
-  "randomArrayMaxElement": 500
+  "arrayMinLength": 2,
+  "arrayMaxLength": 20,
+  "arrayMinElement": 1,
+  "arrayMaxElement": 500
 }
