@@ -45,8 +45,10 @@ public class TaskOne implements Runnable {
         }
         if (inputNumber > thresholdNumber) {
             System.out.println("Привет!");
+            logger.info("Greeting was successful");
         } else {
             System.out.println("* * * тишина * * *");
+            logger.info("Greeting was unsuccessful");
         }
         logger.info("Task one has finished");
     }

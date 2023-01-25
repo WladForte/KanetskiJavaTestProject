@@ -39,8 +39,10 @@ public class TaskTwo implements Runnable {
         }
         if (userInput.equals(requiredNameForGreeting)) {
             System.out.println(String.format("Привет, %s!", userInput));
+            logger.info("Greeting was successful");
         } else {
             System.out.println("Нет такого имени");
+            logger.info("Greeting was unsuccessful");
         }
         logger.info("Task two has finished");
     }

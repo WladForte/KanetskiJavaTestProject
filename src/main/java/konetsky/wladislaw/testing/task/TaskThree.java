@@ -25,6 +25,7 @@ public class TaskThree implements Runnable {
     @Override
     public void run() {
         logger.info("Starting task three...");
+        logger.info(String.format("Initial array: %s", Arrays.toString(numberArray)));
         System.out.println(String.format("Исходный массив: %s", Arrays.toString(numberArray)));
         System.out.println(String.format("Пытаемся найти элементы, кратные %d", numberMultipleOf));
         List<Integer> tmpList = new ArrayList<>();
@@ -33,6 +34,7 @@ public class TaskThree implements Runnable {
                 tmpList.add(numberArray[i]);
             }
         }
+        logger.info(String.format("The array of integer numbers, multiple of %d: %s", numberMultipleOf, tmpList));
         System.out.println(String.format("Массив чисел, кратных %d: %s", numberMultipleOf, tmpList));
         logger.info("Task three has finished");
     }
